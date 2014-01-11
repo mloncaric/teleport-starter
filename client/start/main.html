@@ -1,0 +1,28 @@
+<template name="start">
+	<div id="start" class="view">
+		{{> logo}}
+		
+		<div id="dialog" class="modal startDialog" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-header">
+				<h3 id="myModalLabel">Teleport Now</h3>
+				{{#if room}}
+				<p>Join this Teleport session without signing up!</p>
+				{{else}}
+				<p>Create a free {{instantSessionDuration}} minutes Teleport session without signing up!</p>
+				{{/if}}
+			</div>
+			
+			<div class="modal-body">
+				<p>Hi, {{profile.name}}<span class="pull-right">(Not {{profile.name}}? <a href="{{logout}}">logout</a>)</span></p>
+				
+				<div id="startControls">
+					{{#if room}}
+					<button id="startButton" type="button" class="btn btn-primary"><i class="icon-facetime-video"></i> Join session</button>
+					{{else}}
+					<button id="startButton" type="button" class="btn btn-primary"><i class="icon-facetime-video"></i> Start Session &amp; Invite Guests</button>
+					{{/if}}
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

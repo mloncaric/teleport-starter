@@ -1,0 +1,1 @@
+schedulingView = new Teleport.View("scheduling");

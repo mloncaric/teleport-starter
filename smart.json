@@ -1,0 +1,5 @@
+{
+  "packages": {
+    "teleport": {"git": "https://github.com/mloncaric/teleport.git"}
+  }
+}
