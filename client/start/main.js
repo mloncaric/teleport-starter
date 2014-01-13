@@ -9,11 +9,11 @@ start = function(state)
 		Teleport.setView(startView);
 }
 
-var events =
-{ "click #startButton": startButtonClickHandler
-};
-
-var startView = new Teleport.View("start", events);
+var startView = new Teleport.View("start", {
+	events: {
+		"click #startButton": startButtonClickHandler
+	}
+});
 
 // Event handlers
 function startButtonClickHandler(e)

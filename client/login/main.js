@@ -9,7 +9,11 @@ login = function(state)
 		Teleport.setView(loginGuestView);
 }
 
-var loginGuestView = new Teleport.View("loginGuest", {"submit form": submitHandler});
+var loginGuestView = new Teleport.View("loginGuest", {
+	events: {
+		"submit form": submitHandler
+	}
+});
 
 // Event handlers
 function submitHandler(e)
