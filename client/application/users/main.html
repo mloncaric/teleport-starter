@@ -1,7 +1,9 @@
 <template name="users">
 	<div id="users">
-		<div class="heading pull-left"><i class="icon-user"></i> Users:</div>
+		<div class="heading"><i class="fa fa-user"></i> Users</div>
 		
+		{{#isolate}}
 		<p>{{#listUsers users}}{{name}}{{#if ping}}<span class="ping">({{ping}} ms)</span>{{/if}}{{/listUsers}}</p>
+		{{/isolate}}
 	</div>
 </template>

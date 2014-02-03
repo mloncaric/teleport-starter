@@ -14,14 +14,13 @@ applicationView = new Teleport.View("application", {
 		return [
 			sharedObject
 		];
+	},
+	
+	// Executes every time a template is rendered
+	rendered: function() {
+		
 	}
 });
-
-// Temporary, will be added to the view options
-// Executes every time a template is rendered
-Template.application.rendered = function() {
-	
-}
 
 // Shares anything between users in current session, it's also persisted
 var sharedObject = new Teleport.SharedObject("sharedObject", {

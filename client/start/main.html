@@ -1,10 +1,12 @@
 <template name="start">
 	<div id="start" class="view">
+		{{#isolate}}
 		{{> logo}}
+		{{/isolate}}
 		
-		<div id="dialog" class="modal startDialog" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-header">
-				<h3 id="myModalLabel">Teleport Now</h3>
+		<div class="panel panel-default startDialog center-block">
+			<div class="panel-heading">
+				<h3 class="panel-title">Teleport Now</h3>
 				
 				{{#if room}}
 				<p>Join the session</p>
@@ -13,14 +15,14 @@
 				{{/if}}
 			</div>
 			
-			<div class="modal-body">
+			<div class="panel-body">
 				<p>Hi, {{user.name}}</p>
 				
-				<div id="startControls">
+				<div id="startControls" class="text-center">
 					{{#if room}}
-					<button id="startButton" type="button" class="btn btn-primary"><i class="icon-facetime-video"></i> Join session</button>
+					<button id="startButton" type="button" class="btn btn-primary"><i class="fa fa-video-camera"></i> Join session</button>
 					{{else}}
-					<button id="startButton" type="button" class="btn btn-primary"><i class="icon-facetime-video"></i> Start Session</button>
+					<button id="startButton" type="button" class="btn btn-primary"><i class="fa fa-video-camera"></i> Start Session</button>
 					{{/if}}
 				</div>
 			</div>

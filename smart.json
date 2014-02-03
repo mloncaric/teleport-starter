@@ -1,5 +1,9 @@
 {
   "packages": {
-    "teleport": {"git": "https://github.com/mloncaric/teleport.git"}
+    "teleport": {
+      "git": "https://github.com/mloncaric/teleport.git"
+    },
+    "font-awesome-4-less": {},
+    "bootstrap3-less": {}
   }
 }

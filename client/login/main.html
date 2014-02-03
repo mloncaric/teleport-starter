@@ -1,10 +1,12 @@
 <template name="loginGuest">
 	<div id="loginGuest" class="view">
+		{{#isolate}}
 		{{> logo}}
+		{{/isolate}}
 		
-		<div id="dialog" class="modal startDialog" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-header">
-				<h3 id="myModalLabel">Teleport Now</h3>
+		<div class="panel panel-default startDialog center-block">
+			<div class="panel-heading">
+				<h3 class="panel-title">Teleport Now</h3>
 				
 				{{#if room}}
 				<p>Join the session</p>
@@ -13,16 +15,28 @@
 				{{/if}}
 			</div>
 			
-			<div class="modal-body">
-				<div class="well well-small">
-					<form>
-						<p>Your name: <input id="guestName" type="text" value="Guest"/></p>
+			<div class="panel-body">
+				<div class="well well-sm text-center">
+					<form class="form-horizontal">
+						<div class="form-group row">
+							<div class="col-xs-3">
+								<label class="control-label" for="guestName">Your name:</label>
+							</div>
+							
+							<div class="col-xs-5">
+								<input id="guestName" type="text" value="Guest" class="form-control"/>
+							</div>
+						</div>
 						
-						{{#if room}}
-						<button type="submit" class="btn btn-primary"><i class="icon-facetime-video"></i> Join session</button>
-						{{else}}
-						<button type="submit" class="btn btn-primary">Proceed to session setup <i class="icon-arrow-right"></i></button>
-						{{/if}}
+						<div class="form-group row">
+							<span class="col-xs-12">
+								{{#if room}}
+								<button type="submit" class="btn btn-primary"><i class="fa fa-video-camera"></i> Join session</button>
+								{{else}}
+								<button type="submit" class="btn btn-primary">Proceed to session setup <i class="fa fa-arrow-right"></i></button>
+								{{/if}}
+							</span>
+						</div>
 					</form>
 				</div>
 			</div>

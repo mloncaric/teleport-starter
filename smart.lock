@@ -1,0 +1,55 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "teleport": {
+        "git": "https://github.com/mloncaric/teleport.git",
+        "branch": "master"
+      },
+      "font-awesome-4-less": {},
+      "bootstrap3-less": {}
+    },
+    "packages": {
+      "teleport": {
+        "git": "https://github.com/mloncaric/teleport.git",
+        "branch": "master",
+        "commit": "da3090c098f59b592a4572cb653d07a6ab615172"
+      },
+      "font-awesome-4-less": {
+        "git": "https://github.com/svub/fontawesome4-less.git",
+        "tag": "v4.0.3.2",
+        "commit": "f269e4e2cfa03b292452b658fdf50afb02a9f14c"
+      },
+      "bootstrap3-less": {
+        "git": "https://github.com/eprochasson/bootstrap3-less",
+        "tag": "v0.1.8",
+        "commit": "48b6db4435d9f01a1fcfe694a180b38e8e38835b"
+      },
+      "streams": {
+        "git": "https://github.com/arunoda/meteor-streams.git",
+        "tag": "v0.1.17",
+        "commit": "9fcbbc9b7bf542827babc92089c19e730892a22f"
+      },
+      "raven": {
+        "git": "https://github.com/deepwell/meteor-raven.git",
+        "tag": "v0.2.0",
+        "commit": "f11d60ce99a5f837cd109c553be9b984e14a3f0c"
+      },
+      "connect": {
+        "git": "https://github.com/peerlibrary/meteor-connect.git",
+        "tag": "v2.8.5.2",
+        "commit": "54fb2c1ab97aa0c43cf86d2f15d4b100cdf3a284"
+      },
+      "uri-js": {
+        "git": "https://github.com/olragon/meteor-uri-js.git",
+        "tag": "v1.10.2",
+        "commit": "202c0c02fc61d5232cded188ef5c32b40d7fbca5"
+      },
+      "momentjs": {
+        "git": "https://github.com/crapthings/meteor-momentjs.git",
+        "tag": "v2.1.0.2",
+        "commit": "59a762e297082eea8b8cae00374c2b7ac6f89529"
+      }
+    }
+  }
+}

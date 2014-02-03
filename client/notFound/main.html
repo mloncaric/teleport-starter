@@ -1,14 +1,16 @@
 <template name="notFound">
 	<div id="notFound" class="view">
+		{{#isolate}}
 		{{> logo}}
+		{{/isolate}}
 		
-		<div id="dialog" class="modal startDialog" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-header">
-				<h3 id="myModalLabel">Error</h3>
+		<div class="panel panel-default startDialog center-block">
+			<div class="panel-heading">
+				<h3 class="panel-title">Error</h3>
 			</div>
 			
-			<div class="modal-body">
-				<div class="well well-small">
+			<div class="panel-body">
+				<div class="well well-sm text-center">
 					<p>Page not found</p>
 				</div>
 			</div>
